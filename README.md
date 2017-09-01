@@ -1,7 +1,7 @@
 Megathon'17
 ===================
 *Source Code for:*
-**[www.megathon.tech](www.megathon.tech)**
+**[www.megathon.tech](http://www.megathon.tech)**
 
 This **README** file contains :
  1.  Information About Megathon
