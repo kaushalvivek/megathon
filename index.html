@@ -191,7 +191,7 @@
 
 
 
-        <section class="clients-section about-section" id="structure">
+        <section class="clients-section about-section" id="info">
             <div class="container">
                 <h2 class="m-b-20"><strong>Quick Info</strong></h2>
                 <br />
@@ -206,7 +206,7 @@
                                     <h3>Format</h3>
                                     Click to read about the format, team structure and other specifications of Megathon'17.
                                 </figcaption>
-                                <a onclick="format(); addingActive()" href="javascript:void(0);"></a>
+                                <a onclick="format(); addActive()" href="javascript:void(0);"></a>
                             </figure>
                         </center>
                     </div>
@@ -218,7 +218,7 @@
                                     <h3>How To Apply</h3>
                                     Click to see a guide to the registration procedure, with eligibility.
                                 </figcaption>
-                                <a onclick="howto(); addingActive()" href="javascript:void(0);"></a>
+                                <a onclick="howto(); addActive()" href="javascript:void(0);"></a>
                             </figure>
                         </center>
                     </div>
@@ -230,7 +230,7 @@
                                     <h3>Prizes</h3>
                                     Click here to checkout the prizes on offer worth 5 lakh! Loads of goodies for participation too.
                                 </figcaption>
-                                <a onclick="prizes(); addingActive()" href="javascript:void(0);"></a>
+                                <a onclick="prizes(); addActive()" href="javascript:void(0);"></a>
                             </figure>
                         </center>
                     </div>
@@ -820,19 +820,23 @@
         var elements = $('.modal-overlay, .modal');
 
         function format() {
-            $('.modal-content').html('<h3 style="text-align:center">Format</h3><p style="text-align:center">You will be presented with 5 problem statements divided into two categories - Corporate and Social. The problem statements would be released by 15th of September for you to brainstorm about the problem. This shall be followed by a 24-hour onsite round on the 23-24th September where you would actually be building upon your ideas in teams of 1-4 with the help of some amazing mentors from both industry and academia. The winners would be chosen on the evaluation criteria provided by the case maker that shall be shared with all the participants on the day of the event.</p>');
+            $('.modal-content').html('<h3 style="text-align:center">Format</h3><p style="text-align:center">You will be presented with 5 problem statements divided into two categories - Corporate and Social. The problem statements would be released by 15th of September for you to brainstorm about the problem. This shall be followed by a 24-hour onsite round on the 23-24th September where you would actually be building upon your ideas in teams of 1-4 with the help of some amazing mentors from both industry and academia. The winners would be chosen on the evaluation criteria provided by the case maker that shall be shared with all the participants on the day of the event.</p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function howto() {
-            $('.modal-content').html('<h3 style="text-align:center">How To Apply </h3><p><strong>1. Phase 1 ( Early Bird ):</strong> You register for the event mentioning your preferred choice of the problem statement. When the problem statements are released, you shall be asked to choose one ( can be different from your preferred choice).Hurry since limited slots. Fee : Rs. 250/-</p><p><strong>2. Phase 2 ( Regular ) :</strong> Opens on 16/08/2017. You register for a particular problem statement. On the spot payment would also be accepted. Fee : Rs. 500/-</p><p>The event is open to all the undergraduate and postgraduate college students from all streams. A valid college ID card is essential to participate in the event. Cross-college teams are allowed.</p><h3 style="text-align:center">Scroll Down to Apply!</h3>');
+            $('.modal-content').html('<h3 style="text-align:center">How To Apply </h3><p><strong>1. Phase 1 ( Early Bird ):</strong> You register for the event mentioning your preferred choice of the problem statement. When the problem statements are released, you shall be asked to choose one ( can be different from your preferred choice).Hurry since limited slots. Fee : Rs. 250/-</p><p><strong>2. Phase 2 ( Regular ) :</strong> Opens on 16/08/2017. You register for a particular problem statement. On the spot payment would also be accepted. Fee : Rs. 500/-</p><p>The event is open to all the undergraduate and postgraduate college students from all streams. A valid college ID card is essential to participate in the event. Cross-college teams are allowed.</p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function prizes() {
-            $('.modal-content').html('<h3 style="text-align:center"> Prizes </h3><p>For each problem statement, we have the following prizes:<br /> <ol ><li > Rs.20000 worth of Amazon Gift Vouchers for the winning team.  <li > Rs.10000 worth of Amazon Gift Vouchers    for the first runner up team.  <li > A 6 month internship-interview opportunity at Amazon for the winning team.<li > Certification of participationfor each participant.</ol> </p> <p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p>');
+            $('.modal-content').html('<h3 style="text-align:center"> Prizes </h3><p>For each problem statement, we have the following prizes:<br /> <ol ><li > Rs.20000 worth of Amazon Gift Vouchers for the winning team.  <li > Rs.10000 worth of Amazon Gift Vouchers    for the first runner up team.  <li > A 6 month internship-interview opportunity at Amazon for the winning team.<li > Certification of participationfor each participant.</ol> </p> <p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
-        function addingActive() {
+        function addActive() {
             elements.addClass('active');
+        };
+
+        function removeActive() {
+            $('.close-modal').click();
         };
 
         $('.close-modal').click(function() {
