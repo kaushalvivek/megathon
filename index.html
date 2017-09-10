@@ -25,11 +25,22 @@
     <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script>
+
+    <style>
+        .associate {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #282828;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="header-main" style="z-index:5;">
+
+    <header class="header-main" style="z-index: 5">
+
 
         <div class="container">
 
@@ -94,7 +105,7 @@
                     <!-- <img src="./logos/logo.png" alt="Megathon Logo" width="35%" height="35%" style="padding-left:50px;padding-bottom:20px"> -->
                     <div class="row">
                         <br/>
-                        <h4><span class="fa fa-calendar-o m-r-5"></span>23rd - 24th September 2017 , <span class="fa fa-map-marker m-r-5"></span> IIIT Hyderabad</h4>
+                        <h4><span class="fa fa-calendar-o m-r-5"></span>23rd - 24th September 2017 , <span class="fa fa-map-marker m-r-5"></span> IIIT Hyderabad, Gachibowli</h4>
                         <br/>
                     </div>
 
@@ -171,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-sm-12">
                         <div class="themebox" style="border:3px dashed black;padding:30px 20px 10px 20px;margin: 20px 20px 20px 20px;">
                             <center>
@@ -183,7 +194,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -210,7 +221,7 @@
                             </figure>
                         </center>
                     </div>
-                    <div class="col-sm-4 ">
+                    <div class="col-sm-4">
                         <center>
                             <figure class="imghvr-push-up">
                                 <img src="./images/howto.jpg" width="400px" height="240px">
@@ -222,7 +233,7 @@
                             </figure>
                         </center>
                     </div>
-                    <div class="col-sm-4 ">
+                    <div class="col-sm-4">
                         <center>
                             <figure class="imghvr-push-up">
                                 <img src="./images/prize.jpg" width="400px" height="240px">
@@ -242,9 +253,9 @@
 
             <!-- modal -->
             <div class="modal-overlay">
-                <div class="modal">
+                <div class="modal" style="z-index:10">
 
-                    <a class="close-modal">
+                    <a class="close-modal" style="z-index:11;" href="javascript:void(0)" onclick="removeActive()">
                         <svg viewBox="0 0 20 20">
           <path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
         </svg>
@@ -351,14 +362,14 @@
         </section> <!--dgidghklkgdgklhdgklh-->
 
         <section class="clients-section about-section " id="register">
-            <div class="container ">
+            <div class="container">
                 <h2 class="m-b-20 "><strong>Register</strong></h2>
                 <iframe src="https://www.meraevents.com/ticketWidget?eventId=139145&ucode=organizer&wcode=9063CD-9063CD-333333-9063CD-&theme=1 " width="100% " height="600px " frameborder="0px "></iframe>
             </div>
         </section>
 
 
-        <section class="who-section gray-section " id="who ">
+        <section class="who-section gray-section " id="who">
             <div class="container ">
                 <h2 class="m-b-20 "><strong style="border-bottom:3px dashed; ">PAST SPEAKERS</strong></h2>
                 <h5 class="regular m-b-140 ">17-18th September 2016</h5>
@@ -373,12 +384,12 @@
                             <h5>Co-Founder Director &amp; CTO <br> at Reasoning (Martjack)</h5>
                         </div>
                     </div>
-                    <div class="col-sm-4 ">
+                    <div class="col-sm-4">
                         <div class="box ">
                             <div class="img-wrap " style="background-image:url(&#39;images/suresh.jpg&#39;) ; ">
 
                             </div>
-                            <h3 class="bold ">Suresh Challa</h3>
+                            <h3 class="bold">Suresh Challa</h3>
                             <h5> President <br> at TiE Hyderabad</h5>
                         </div>
                     </div>
@@ -407,7 +418,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 ">
+                    <div class="col-sm-4">
                         <div class="box ">
                             <div class="img-wrap " style="background-image:url(&#39;images/prasad.jpg&#39;) ; ">
 
@@ -579,7 +590,7 @@
             </div>
         </section>
 
-        <section class="when-section " id="when ">
+        <section class="when-section " id="when">
             <div class="container ">
                 <h2><strong>SCHEDULE / AGENDA</strong></h2>
 
@@ -587,27 +598,26 @@
                     <h1><span class="text-nav inline middle ">23rd-24th September 2017</span></h1>
                 </div>
                 <center>
-                    <h3> Timing : 5:00 PM ( 23rd Sept. ) to 8:00 PM ( 24th Sept. ) </h3>
+                    <h3> Timing : 5:00 PM ( 23rd Sept. ) to 5:00 PM ( 24th Sept. ) </h3>
                 </center>
             </div>
         </section>
 
-        <section class="clients-section " id="clients ">
+        <section class="clients-section " id="clients">
             <center>
-                <h1 id="sponsors "><strong>PARTNERS</strong></h1>
+                <h1 id="sponsors"><strong>PARTNERS</strong></h1>
 
                 <h2><strong>ORGANISING PARTNER</strong></h2>
                 <ul class="list-unstyled ">
                     <li>
-
-                        <a target="_blank" href="http://iiith.ac.in/">
-                            <img src="./logos/Indian_Institute_of_Technology_Hyderabad_logo.png" alt="" width="175px">
+                        <a target="_blank" href="http://iiit.ac.in/">
+                            <img src="./logos/iiit-new.png" alt="IIIT Logo" width="200px">
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://iiit.ac.in/">
-                            <img src="./logos/iiit-new.png" alt="IIIT Logo" width="200px">
 
+                        <a target="_blank" href="http://iith.ac.in/">
+                            <img src="./logos/Indian_Institute_of_Technology_Hyderabad_logo.png" alt="" width="175px">
                         </a>
                     </li>
                 </ul>
@@ -615,7 +625,7 @@
             </center>
         </section>
 
-        <section class="clients-section " id="clients ">
+        <section class="clients-section " id="clients">
 
             <h2><strong>ECOSYSTEM PARTNERS</strong></h2>
             <ul class="list-unstyled ">
@@ -639,7 +649,7 @@
 
         </section>
 
-        <section class="clients-section " id="title ">
+        <section class="clients-section " id="title">
 
             <h2><strong>TITLE SPONSOR</strong></h2>
 
@@ -655,73 +665,97 @@
             </div>
         </section>
 
-        <section class="clients-section " id="associate ">
-
-            <h2><strong>ASSOCIATE SPONSORS</strong></h2>
+        <section class="clients-section" id="associate">
 
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-3">
+
+                <div class="col-sm-4" style="text-align:center">
+                    <span class="associate">Associate Title Sponsor</span>
                     <center>
                         <a target="_blank" href="https://www.capgemini.com/"><img src="./logos/capgemini.png" height="75%" width="75%" /></a>
                     </center>
+                    <br />
                 </div>
-                <div class="col-sm-4">
-                    <a target="_blank" href="https://www.pwc.in/"><img src="./logos/pwc.png" height="40%" width="40%" /> </a>
 
-                </div>
-                <div class="col-sm-2 "></div>
-            </div>
-        </section>
-
-        <section class="clients-section " id="clients ">
-
-            <h2><strong>SPONSORS</strong></h2>
-            <div class="row ">
-                <ul class="list-unstyled ">
-
-                    <li>
-
+                <div class="col-sm-4" style="text-align:center">
+                    <span class="associate">Challenge Sponsor</span>
+                    <center>
+                        <br />
+                        <br />
+                        <br />
                         <a target="_blank" href="https://www.ibm.com/in-en/">
-                            <img src="./logos/ibm-logo.png" width="250" alt="">
+                            <img src="./logos/ibm-logo.png" width="60%" height="60%" alt="">
                         </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="http://get.tech/startups/">
-                            <img src="./logos/Tech Logo High Res.png" width="250" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.digitalocean.com/?utm_medium=india_community&amp;utm_source=iith">
-                            <img src="./logos/DO_Logo_horizontal_blue.png" width="250" alt="">
+                        <br />
+                        <br />
+                        <br />
+                    </center>
+                </div>
+                <div class="col-sm-4" style="text-align:center">
+                    <span class="associate">Knowledge Partner</span>
+                    <center>
+                        <br />
+                        <br />
+                        <a target="_blank" href="https://www.pwc.in/"><img src="./logos/pwc.png" height="40%" width="40%" /> </a>
+                    </center>
 
-                        </a>
-                    </li>
+                </div>
 
-
-                </ul>
-            </div>
-            <div class="row ">
-                <ul class="list-unstyled ">
-                    <li>
-
-                        <a target="_blank" href="https://www.invisionapp.com/signup/hackathon">
-                            <img src="./logos/invision-logo-pink1.png" width="250" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.progress.com/">
-                            <img src="./logos/progress.png" width="250" alt="">
-
-                        </a>
-                    </li>
-
-                </ul>
             </div>
         </section>
-        <section class="clients-section " id="clients ">
 
-            <h2><strong>Past Investors</strong></h2>
+        <section class="clients-section " id="clients">
+
+            <h2><strong>Technology Partners</strong></h2>
+            <div class="row ">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <center>
+                        <a target="_blank" href="http://get.tech/startups/">
+                            <img src="./logos/Tech Logo High Res.png" width="50%" height="50%" alt="">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-sm-3">
+                    <div style="margin-top:15px">
+                        <a target="_blank" href="https://www.digitalocean.com/?utm_medium=india_community&amp;utm_source=iith">
+                            <img src="./logos/DO_Logo_horizontal_blue.png" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+        </section>
+
+        <section class="clients-section " id="clients">
+
+            <h2><strong>Event Partners</strong></h2>
+            <div class="row ">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <center>
+                        <a target="_blank" href="http://www.theaugustfest.com/">
+                            <img src="./logos/augustfest.png" width="80%" height="80%" alt="">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-sm-3">
+                    <div style="margin-top:25px">
+                        <a target="_blank" href="http://www.thetechfest.com/">
+                            <img src="./logos/techfest.png" width="100%" height="100%" alt="">
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+        </section>
+        <section class="clients-section " id="clients">
+
+            <h2><strong>Investors</strong></h2>
             <ul class="list-unstyled ">
                 <li>
 
@@ -741,27 +775,63 @@
                     </a>
                 </li>
             </ul>
+        </section>
+        <section class="clients-section " id="clients">
 
+            <h2><strong>SOCIAL RESPONSIBILTIY PARTNER</strong></h2>
+            <ul class="list-unstyled ">
+                <li>
+                    <a target="_blank" href="http://www.hyderabadpolice.gov.in/SheTeams.html">
+                        <img src="./logos/sheteam.jpg" width="60%" height="60%" alt="">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <section class="clients-section" id="associate">
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3" style="text-align:center">
+                    <span class="associate">Outreach Partner</span>
+                    <div style="margin-top:45px">
+                        <center>
+                            <a target=" _blank " href="https://www.stumagz.com/ "><img src="./logos/stumagz.png " height="75% " width="75% " /></a>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 " style="text-align:center ">
+                    <span class="associate ">Event Partner</span>
+                    <center>
+                        <div style="margin-top:30px">
+                            <a target="_blank " href="https://meraevents.com">
+                                <img src="./logos/meraevents.jpg" width="80% " height="70% " alt=" ">
+                            </a>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-3 "></div>
         </section>
         <section class="clients-section " id="clients ">
             <div class="row ">
                 <div class="col-sm-12 ">
-                    <h2><strong>PAST MEDIA PARTNER</strong></h2>
+                    <h2><strong>MEDIA PARTNERS</strong></h2>
                     <ul class="list-unstyled ">
                         <li>
 
-                            <a target="_blank" href="http://www.thetechportal.com/">
-                                <img src="./logos/TECHPORTAL.png" width="150px" alt="">
+                            <a target="_blank " href="http://www.thetechportal.com/ ">
+                                <img src="./logos/TECHPORTAL.png " width="150px " alt=" ">
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="http://www.inc42.com/">
-                                <img src="./logos/inc42.png" width="150px" alt="">
+                            <a target="_blank " href="http://www.inc42.com/ ">
+                                <img src="./logos/inc42.png " width="150px " alt=" ">
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.techinasia.com/">
-                                <img src="./logos/techinasia.png" width="150px" alt="">
+                            <a target="_blank " href="https://www.techinasia.com/ ">
+                                <img src="./logos/techinasia.png " width="150px " alt=" ">
 
                             </a>
                         </li>
@@ -771,85 +841,90 @@
         </section>
         <section class="clients-section " id="clients ">
 
-            <h2><strong>PAST FOOD PARTNERS</strong></h2>
-            <ul class="list-unstyled ">
+            <h2><strong>FOOD PARTNER</strong></h2>
+            <center>
+                <a target="_blank " href="https://www.zomato.com/hyderabad/wich-please-gachibowli ">
+                    <img src="./logos/wichplease.jpg " width="200px " alt=" ">
+                </a>
+            </center>
+        </section>
 
+        <section class="clients-section " id="clients ">
+            <h2><strong>VENUE PARTNER</strong></h2>
+            <ul class="list-unstyled ">
                 <li>
 
-                    <a target="_blank" href="https://www.zomato.com/hyderabad/wich-please-gachibowli">
-                        <img src="./logos/wichplease.jpg" width="200px" alt="">
+                    <a target="_blank " href="http://iiit.ac.in/ ">
+                        <img src="./logos/iiit-new.png " alt=" " width="200px ">
+
                     </a>
                 </li>
+            </ul>
+        </section>
+
+        <!-- <section class="clients-section " id="clients ">
+
+            <h2><strong>PAST GIFTING PARTNER</strong></h2>
+            <ul class="list-unstyled ">
                 <li>
-                    <a target="_blank" href="http://hellocurry.com/">
-                        <img src="./logos/hellocurry.png" width="200px" alt="">
+
+                    <a target="_blank " href="http://www.lovelychocos.com/ ">
+                        <img src="./logos/lovelychocos-logo.png " width="200px " height="100px " alt=" ">
 
                     </a>
                 </li>
             </ul>
 
+        </section> -->
 
-            <section class="clients-section " id="clients ">
-                <h2><strong>VENUE PARTNER</strong></h2>
-                <ul class="list-unstyled ">
-                    <li>
+        <section class="clients-section " id="contact ">
 
-                        <a target="_blank" href="http://iiit.ac.in/">
-                            <img src="./logos/iiit-new.png" alt="" width="200px">
+            <h2><strong>Contact Organizers</strong></h2>
+            <div class="row ">
+                <div class="col-sm-6 " style="text-align:right ">
+                    Ayush Deva ( E-Cell IIIT H ) : +91-708142717
+                </div>
 
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                <div class="col-sm-6 " style="text-align:left ">
+                    Keshav Chouksey ( E-Cell IIT H ) : +91-9424485766
+                </div>
 
-            <section class="clients-section " id="clients ">
+            </div>
+            <br />
+            <div class="row ">
+                <div class="col-sm-6 col-xs-12 " style="text-align:right ">
 
-                <h2><strong>PAST GIFTING PARTNER</strong></h2>
-                <ul class="list-unstyled ">
-                    <li>
+                    Vivek Kaushal ( E-Cell IIIT H ) : +91-8757251547
+                </div>
 
-                        <a target="_blank" href="http://www.lovelychocos.com/">
-                            <img src="./logos/lovelychocos-logo.png" width="200px" height="100px" alt="">
+                <div class="col-sm-6 col-xs-12 " style="text-align:left ">
+                    Bhanu ( E-Cell IIT H ) : +91-7013027161
 
-                        </a>
-                    </li>
-                </ul>
+                </div>
+            </div>
+            <br/>
 
-            </section>
 
-            <section class="clients-section " id="contact ">
+            <div class="row ">
+                <div class="col-sm-6 " style="text-align:right ">
+                    <a href="mailto:ecell@iiit.ac.in ">
+                        <font color=#1a0dab>ecell@iiit.ac.in</font>
+                    </a>
+                </div>
 
-                <h2><strong>Contact Organizers</strong></h2>
-                <ul class="list-unstyled ">
-                    <li>
-                        Ayush Deva ( E-Cell IIIT H ) : +91-7081427171
-                    </li>
-                    <li>
-                        Keshav Chouksey ( E-Cell IIT H ) : +91-9424485766
-                    </li>
-                </ul>
-                <ul class="list-unstyled ">
-                    <li>
-                        Vivek Kaushal ( E-Cell IIIT H ) : +91-8757251547
-                    </li>
-                    <li>
-                        Bhanu ( E-Cell IIT H ) : +91-7013027161
-                    </li>
-                </ul>
-                <ul class="list-unstyled ">
-                    <li>
-                        ecell@iiit.ac.in
-                    </li>
-                    <li>
-                        ecell@iith.ac.in
-                    </li>
-                </ul>
+                <div class="col-sm-6 " style="text-align:left ">
+                    <a href="mailto:ecell@iith.ac.in ">
+                        <font color=#1a0dab>ecell@iith.ac.in</font>
+                    </a>
+                </div>
+            </div>
 
-            </section>
 
-            <a id="top " href="http://megathon.tech/#subheader " style="display: none; ">
-                <img src="./logos/arrow-top.png " alt=" ">
-            </a>
+        </section>
+
+        <a id="top " href="http://megathon.tech/#subheader " style="display: none; ">
+            <img src="./logos/arrow-top.png " alt=" ">
+        </a>
 
     </main>
 
@@ -858,22 +933,13 @@
         <div class="container ">
 
             <small>
-			Copyright 2017 All Rights Reserved. Copyright </small>
+            Copyright 2017 All Rights Reserved. Copyright </small>
 
             <div class="social-links right ">
-                <a href="http://www.twitter.com/ecell_iith ">
+                <a href="http://twitter.com/ecell_iiithyd " target="_blank ">
                     <span class="fa fa-twitter "></span>
                 </a>
-                <a href="http://www.facebook.com/ecell.iithyderabad ">
-                    <span class="fa fa-facebook "></span>
-                </a>
-            </div>
-
-            <div class="social-links right ">
-                <a href="http://www.twitter.com/ecell_iiithyd ">
-                    <span class="fa fa-twitter "></span>
-                </a>
-                <a href="http://www.facebook.com/ecell.iiithyd ">
+                <a href="https://www.facebook.com/events/2032386077047690/ " target="_blank ">
                     <span class="fa fa-facebook "></span>
                 </a>
             </div>
@@ -888,8 +954,8 @@
 
 
     <!--[if lt IE 9]>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js "></script>
-	<![endif]-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js "></script>
+    <![endif]-->
     <!--[if gte IE 9]><!-->
     <!--<![endif]-->
     <script async=" " src="./js/analytics.js "></script>
@@ -906,15 +972,15 @@
         var elements = $('.modal-overlay, .modal');
 
         function format() {
-            $('.modal-content').html('<h3 style="text-align:center">Format</h3><p style="text-align:center">You will be presented with 5 problem statements divided into two categories - Corporate and Social. The problem statements would be released by 15th of September for you to brainstorm about the problem. This shall be followed by a 24-hour onsite round on the 23-24th September where you would actually be building upon your ideas in teams of 1-4 with the help of some amazing mentors from both industry and academia. The winners would be chosen on the evaluation criteria provided by the case maker that shall be shared with all the participants on the day of the event.</p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
+            $('.modal-content').html('<h3 style="text-align:center ">Format</h3><p style="text-align:center">You will be presented with 5 problem statements divided into two categories - Corporate and Social. The problem statements would be released by 15th of September for you to brainstorm about the problem. This shall be followed by a 24-hour onsite round on the 23-24th September where you would actually be building upon your ideas in teams of 1-4 with the help of some amazing mentors from both industry and academia. The winners would be chosen on the evaluation criteria provided by the case maker that shall be shared with all the participants on the day of the event.</p><h3 style="text-align: center "><a href="javascript: void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function howto() {
-            $('.modal-content').html('<h3 style="text-align:center">How To Apply </h3><p><strong>1. Phase 1 ( Early Bird ):</strong> You register for the event mentioning your preferred choice of the problem statement. When the problem statements are released, you shall be asked to choose one ( can be different from your preferred choice).Hurry since limited slots. Fee : Rs. 250/-</p><p><strong>2. Phase 2 ( Regular ) :</strong> Opens on 16/08/2017. You register for a particular problem statement. On the spot payment would also be accepted. Fee : Rs. 500/-</p><p>The event is open to all the undergraduate and postgraduate college students from all streams. A valid college ID card is essential to participate in the event. Cross-college teams are allowed.</p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
+            $('.modal-content').html('<h3 style="text-align:center">How To Apply </h3><p><strong>1. Phase 1 ( Early Bird ):</strong> You register for the event mentioning your preferred choice of the problem statement. When the problem statements are released, you shall be asked to choose one ( can be different from your preferred choice).Hurry since limited slots. Fee : Rs. 250/-</p><p><strong>2. Phase 2 ( Regular ) :</strong> Opens on 16/08/2017. You register for a particular problem statement. On the spot payment would also be accepted. Fee : Rs. 500/-</p><p>The event is open to all the undergraduate and postgraduate college students from all streams. A valid college ID card is essential to participate in the event. Cross-college teams are allowed.</p><h3 style="text-align: center "><a href="javascript: void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function prizes() {
-            $('.modal-content').html('<h3 style="text-align:center"> Prizes </h3><p>For each problem statement, we have the following prizes:<br /> <ol ><li > Rs.20000 worth of Amazon Gift Vouchers for the winning team.  <li > Rs.10000 worth of Amazon Gift Vouchers    for the first runner up team.  <li > A 6 month internship-interview opportunity at Amazon for the winning team.<li > Certification of participationfor each participant.</ol> </p> <p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
+            $('.modal-content').html('<h3 style="text-align:center"> Prizes </h3><p>For each problem statement, we have the following prizes:<br /> <ol ><li > Rs.20000 worth of Amazon Gift Vouchers for the winning team.  <li > Rs.10000 worth of Amazon Gift Vouchers    for the first runner up team.  <li > A 6 month internship-interview opportunity at Amazon for the winning team.<li > Certification of participationfor each participant.</ol> </p> <p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p><h3 style="text-align: center "><a href="javascript: void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function participationaward() {
