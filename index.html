@@ -38,7 +38,9 @@
 
 <body>
 
+
     <header class="header-main" style="z-index: 5">
+
 
         <div class="container">
 
@@ -272,6 +274,92 @@
 
 
         </section>
+
+        <!--dgidghklkgdgklhdgklh-->
+        <section class="clients-section about-section" id="info">
+            <div class="container">
+                <h2 class="m-b-20"><strong>Prizes</strong></h2>
+                <br />
+                <div class="row">
+
+                    <div class="col-sm-3">
+
+                        <center>
+                            <figure style="border-radius:50%;border-color:#222222;border-style:solid;border-width:5px;" class="imghvr-push-up">
+                                <img class="circle-images" src="./images/prize_01.png" width="240px" height="240px">
+                                <figcaption>
+                                    <h3>1st Prize</h3>
+                                    Rs.20000 worth of Amazon Gift Vouchers for the winning team. 
+                                </figcaption>
+                                <!--<a onclick="format(); addActive()" href="javascript:void(0);"></a>
+                            --></figure>
+                        </center>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <center>
+                            <figure style="border-radius:50%;border-color:#222222;border-style:solid;border-width:5px;" class="imghvr-push-up">
+                                <img class="circle-images" src="./images/prize_02_cr.png" width="240px" height="240px">
+                                <figcaption>
+                                    <h3>2nd Prize</h3>
+                                    Rs.10000 worth of Amazon Gift Vouchers for the first runner up team. 
+                                </figcaption>
+                                <!--<a onclick="howto(); addActive()" href="javascript:void(0);"></a>
+                            --></figure>
+                        </center>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <center>
+                            <figure style="border-radius:50%;border-color:#222222;border-style:solid;border-width:5px;" class="imghvr-push-up">
+                                <img class="circle-images" src="./images/prize_intern.png" width="240px" height="240px">
+                                <figcaption>
+                                    <h3>Internship</h3>
+                                    A 6 month internship-interview opportunity at Amazon for the winning team.
+                                </figcaption>
+                                <!--<a onclick="prizes(); addActive()" href="javascript:void(0);"></a>
+                            --></figure>
+                        </center>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <center>
+                            <figure style="border-radius:50%;border-color:#222222;border-style:solid;border-width:5px;" class="imghvr-push-up">
+                                <img class="circle-images" src="./images/prize_part_cr.png" width="240px" height="240px">
+                                <figcaption>
+                                    <h3>Participation</h3>
+                                    Certification of participation for each participant.
+                                </figcaption>
+                                <a onclick="participationaward(); addActive()" href="javascript:void(0);"></a>
+                            </figure>
+                        </center>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- modal -->
+            <div class="modal-overlay">
+                <div class="modal" style="z-index:10;">
+
+                    <a class="close-modal" style="z-index:11;" href="javascript:void(0)" onclick="removeActive()">
+                        <svg viewBox="0 0 20 20">
+          <path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+        </svg>
+                    </a>
+                    <!-- close modal -->
+
+                    <div class="modal-content">
+                        <h3>Box Content here.</h3>
+                    </div>
+                    <!-- content -->
+
+                </div>
+                <!-- modal -->
+            </div>
+            <!-- overlay -->
+
+
+        </section> <!--dgidghklkgdgklhdgklh-->
 
         <section class="clients-section about-section " id="register">
             <div class="container">
@@ -893,6 +981,10 @@
 
         function prizes() {
             $('.modal-content').html('<h3 style="text-align:center"> Prizes </h3><p>For each problem statement, we have the following prizes:<br /> <ol ><li > Rs.20000 worth of Amazon Gift Vouchers for the winning team.  <li > Rs.10000 worth of Amazon Gift Vouchers    for the first runner up team.  <li > A 6 month internship-interview opportunity at Amazon for the winning team.<li > Certification of participationfor each participant.</ol> </p> <p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p><h3 style="text-align: center "><a href="javascript: void(0)" onclick="removeActive()">Close</a></h3>');
+        }
+
+        function participationaward() {
+            $('.modal-content').html('<h3 style="text-align:center"> Participation </h3><p >Every participant shall be given:<ol><li> Food <li> Megathon T - shirt <li> Welcome Kit <li> Certificate of Participation <li> 15 $ worth Digital Ocean credits. <li> Free .tech domain  </ol> </p><h3 style="text-align:center"><a href="javascript:void(0)" onclick="removeActive()">Close</a></h3>');
         }
 
         function addActive() {
