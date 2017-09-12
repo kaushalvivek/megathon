@@ -197,6 +197,76 @@
             </div>
         </section>
 
+        <section class="clients-section about-section" id="theme">
+            <!-- <div class="container"> -->
+            <h2 class="m-b-20"><strong>Problem Statements</strong></h2>
+            <br />
+            <div class="row">
+
+                <figure class="imghvr-flip-vert">
+                    <img src="./images/chatbot.png" width="288px" height="190px" />
+                    <center>
+                        <figcaption style="font-size:20px">
+                            IBM<br/>
+                            <strong>ChatBot</strong> <br /> Click to know more!
+                        </figcaption>
+                    </center>
+                    <a onclick="statement(); addActive()" href="javascript:void(0);"></a>
+                </figure>
+
+                <figure class="imghvr-flip-vert">
+                    <img src="./images/smart.png" width="288px" height="192px" />
+                    <center>
+                        <figcaption style="font-size:20px">
+                            PWC<br/>
+                            <strong>Smart Cities</strong> <br/> Click to know more!
+                        </figcaption>
+                    </center>
+                    <a onclick="statement(); addActive()" href="javascript:void(0);"></a>
+                </figure>
+
+                <figure class="imghvr-flip-vert">
+                    <img src="./images/amazon.png" width="288px" height="190px" />
+                    <center>
+                        <figcaption style="font-size:20px">
+                            Amazon<br/>
+                            <strong>Making Selling Fun</strong> <br /> on Amazon, click to know more!
+                        </figcaption>
+                    </center>
+                    <a onclick="statement(); addActive()" href="javascript:void(0);"></a>
+                </figure>
+
+                <figure class="imghvr-flip-vert">
+                    <img src="./images/privacy.jpg" width="288px" height="190px" />
+                    <center>
+                        <figcaption style="font-size:20px">
+                            PWC<br/>
+                            <strong>Privacy and Security</strong><br /> Click to know more!
+                        </figcaption>
+                    </center>
+                    <a onclick="statement(); addActive()" href="javascript:void(0);"></a>
+                </figure>
+
+
+
+                <figure class="imghvr-flip-vert">
+                    <img src="./images/women.png" width="288px" height="190px" />
+                    <center>
+                        <figcaption style="font-size:20px">
+                            The She Team<br/>
+                            <strong>Women Safety</strong><br /> Click to know more!
+                        </figcaption>
+                    </center>
+                    <a onclick="statement(); addActive()" href="javascript:void(0);"></a>
+                </figure>
+
+
+
+
+
+                <!-- <img src="http://lorempixel.com/288/190" width="288px" height="190px" /> -->
+                <!-- </div> -->
+        </section>
 
 
 
@@ -972,6 +1042,10 @@
 
     <script>
         var elements = $('.modal-overlay, .modal');
+
+        function statement() {
+            $('.modal-content').html('<h3 style="text-align:center ">Detailed Problem Statements will be uploaded at 6:00pm, on 15th September, 2017.</h3>');
+        }
 
         function format() {
             $('.modal-content').html('<h3 style="text-align:center ">Format</h3><p style="text-align:center">You will be presented with 5 problem statements divided into two categories - Corporate and Social. The problem statements would be released by 15th of September for you to brainstorm about the problem. This shall be followed by a 24-hour onsite round on the 23-24th September where you would actually be building upon your ideas in teams of 1-4 with the help of some amazing mentors from both industry and academia. The winners would be chosen on the evaluation criteria provided by the case maker that shall be shared with all the participants on the day of the event.</p><p style="text-align:center">We, as E-Cell, also promote and help in making ideas turn into businesses. So, if any of your ideas across any problem statement has the potential to become a successful startup, CIE ( Centre for Incubation and Entrepreneurship ), IIITH, shall provide an initial seed funding of Rs. 5 lac (subject to serious progress in the next three months). So, do not miss out on this opportunity.</p><h3 style="text-align: center "><a href="javascript: void(0)" onclick="removeActive()">Close</a></h3>');
