@@ -10,7 +10,7 @@
     <link rel="dns-prefetch" href="http://ajax.googleapis.com/">
     <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="http://themes.googleusercontent.com/">
-    <link rel="dns-prefetch" href="http://www.google-analytics.com/">
+    <!-- <link rel="dns-prefetch" href="http://www.google-analytics.com/"> -->
     <link rel="shortcut icon" type="image/png" href="./logos/favicon.ico" />
     <link rel="stylesheet" href="./css/screen.css">
 
@@ -18,13 +18,16 @@
     <link href="./css/font.css" rel="stylesheet" type="text/css">
     <link href="./css/font1.css" rel="stylesheet" type="text/css">
     <link href="./css/modal.css" rel="stylesheet" type="text/css">
+    <!-- <link href="./css/flipclock.css" rel="stylesheet" type="text/css"> -->
     <link href="./css/imagehover.css" rel="stylesheet" type="text/css">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script> -->
+    <!-- <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script> -->
+    <!-- <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script> -->
+    <!-- <script type="text/javascript" charset="UTF-8" src="./js/flipclock.js"></script> -->
 
     <style>
         .associate {
@@ -73,6 +76,9 @@
                         <a href="#register">Register Now!</a>
 
                     </li>
+
+
+
                 </ul>
             </nav>
 
@@ -110,7 +116,10 @@
                     </div>
 
                     <a href="#register" class="btn--primary">Register Now<span class="fa fa-long-arrow-right"></span></a>
-
+                    <div class="row">
+                        <div class="clock" style="margin:2em;"></div>
+                        <div class="message"></div>
+                    </div>
                 </div>
             </article>
         </div>
@@ -829,15 +838,17 @@
 
         </section>
 
+        <section class="clients-section" id="clients">
 
-        <h2><strong>SOCIAL RESPONSIBILTIY PARTNER</strong></h2>
-        <ul class="list-unstyled ">
-            <li>
-                <a target="_blank" href="http://www.hyderabadpolice.gov.in/SheTeams.html">
-                    <img src="./logos/sheteam.jpg" width="60%" height="60%" alt="">
-                </a>
-            </li>
-        </ul>
+            <h2><strong>SOCIAL RESPONSIBILTIY PARTNER</strong></h2>
+
+            <ul class="list-unstyled ">
+                <li>
+                    <a target="_blank" href="http://www.hyderabadpolice.gov.in/SheTeams.html">
+                        <img src="./logos/sheteam.jpg" width="60%" height="60%" alt="">
+                    </a>
+                </li>
+            </ul>
 
         </section>
         <section class="clients-section" id="associate">
@@ -1061,22 +1072,44 @@
             elements.removeClass('active');
         });
 
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        // (function(i, s, o, g, r, a, m) {
+        //     i['GoogleAnalyticsObject'] = r;
+        //     i[r] = i[r] || function() {
+        //         (i[r].q = i[r].q || []).push(arguments)
+        //     }, i[r].l = 1 * new Date();
+        //     a = s.createElement(o),
+        //         m = s.getElementsByTagName(o)[0];
+        //     a.async = 1;
+        //     a.src = g;
+        //     m.parentNode.insertBefore(a, m)
+        // })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-84010247-1', 'auto');
-        ga('send', 'pageview');
+        // ga('create', 'UA-84010247-1', 'auto');
+        // ga('send', 'pageview');
+
+
+        var clock;
+
+        $(document).ready(function() {
+            var clock;
+
+            clock = $('.clock').FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: false,
+                callbacks: {
+                    stop: function() {
+                        $('.message').html('The clock has stopped!')
+                    }
+                }
+            });
+
+            clock.setTime(220880);
+            clock.setCountdown(true);
+            clock.start();
+
+        });
     </script>
-    <!-- <iframe width="100%" height="600px" src="https://www.youtube.com/embed/PtmJd0yNvJA" frameborder="0" allowfullscreen></iframe> -->
+
 </body>
 
 </html>
