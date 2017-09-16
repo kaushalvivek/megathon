@@ -18,16 +18,16 @@
     <link href="./css/font.css" rel="stylesheet" type="text/css">
     <link href="./css/font1.css" rel="stylesheet" type="text/css">
     <link href="./css/modal.css" rel="stylesheet" type="text/css">
-    <!-- <link href="./css/flipclock.css" rel="stylesheet" type="text/css"> -->
     <link href="./css/imagehover.css" rel="stylesheet" type="text/css">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/timer.js"></script>
     <!-- <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script> -->
     <!-- <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script> -->
     <!-- <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script> -->
-    <!-- <script type="text/javascript" charset="UTF-8" src="./js/flipclock.js"></script> -->
+
 
     <style>
         .associate {
@@ -35,6 +35,10 @@
             font-weight: bold;
             text-transform: uppercase;
             color: #282828;
+        }
+        
+        #timer {
+            color: #fff;
         }
     </style>
 </head>
@@ -115,10 +119,11 @@
                         <br/>
                     </div>
 
-                    <a href="#register" class="btn--primary">Register Now<span class="fa fa-long-arrow-right"></span></a>
-                    <div class="row">
-                        <div class="clock" style="margin:2em;"></div>
-                        <div class="message"></div>
+                    <a href="#register" class="btn--primary">Register Now!<span class="fa fa-long-arrow-right"></span></a>
+                    <div class="row" style="margin-top:30px">
+                        <h2 id="timer">
+
+                        </h2>
                     </div>
                 </div>
             </article>
@@ -135,6 +140,7 @@
                             in and around Hyderabad. The first edition of Megathon turned out to be a huge success with participation from 80 teams having around 450 participants and over 1000 aspirants from 85+ colleges.
 
                         </p>
+
                     </div>
                     <div class="col-sm-3">
                         <img src="./logos/Bulb.png" width="150px">
@@ -1002,7 +1008,7 @@
         <div class="container ">
 
             <small>
-            Copyright 2017 All Rights Reserved. Copyright </small>
+            Copyright 2017 All Rights Reserved. </small>
 
             <div class="social-links right ">
                 <a href="http://twitter.com/ecell_iiithyd " target="_blank ">
@@ -1086,28 +1092,6 @@
 
         // ga('create', 'UA-84010247-1', 'auto');
         // ga('send', 'pageview');
-
-
-        var clock;
-
-        $(document).ready(function() {
-            var clock;
-
-            clock = $('.clock').FlipClock({
-                clockFace: 'DailyCounter',
-                autoStart: false,
-                callbacks: {
-                    stop: function() {
-                        $('.message').html('The clock has stopped!')
-                    }
-                }
-            });
-
-            clock.setTime(220880);
-            clock.setCountdown(true);
-            clock.start();
-
-        });
     </script>
 
 </body>
